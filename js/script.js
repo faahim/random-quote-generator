@@ -13,6 +13,7 @@ $(document).ready(function() {
 			success: function(quotes) {
 				$(".insert-quote").html(quotes.quote);
 				$(".insert-author").html("- " + quotes.author);
+				$("#tweet").attr("href", "https://twitter.com/intent/tweet?text="+quotes.quote+" -"+quotes.author);
 			},
 			beforeSend: function(xhr) {
 		   xhr.setRequestHeader("X-Mashape-Authorization", "tLoCsKtopemshNeZYqkzFIYU45dvp1WHQRrjsnmBOsG4EMUvoE");
