@@ -1,6 +1,15 @@
 body {
-	font-family: sans;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 1em;
 	color: #fff;
+	background-color: #122136;
+}
+
+.insert-quote {
+	font-family: "Caveat Brush";
+	font-size: 3em;
+	padding: 0 30px;
+	margin-top: 20px;
 }
 
 #quote-box {
@@ -9,6 +18,82 @@ body {
 	margin: 20vh auto 0;
 	padding: 30px;
 	border-radius: 10px;
-	background-color: darkred;
+	background-color: #3EBB68;
+	position: relative;
+	overflow: hidden;
+	transition: all 1s;
 }
 
+.controls {
+	position: absolute;
+	width: 100%;
+	padding: 20px;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(56, 56, 56, 0.20);
+}
+
+.insert-author {
+	display: inline-block;
+	width: 60%;
+	font-size: 2em;
+	margin: 0;
+}
+
+a {
+	display: inline-block;
+	position: relative;
+	left: 20px;
+	top: 8px;
+}
+
+i {
+	color: white;
+	transition: 500ms;
+}
+
+i:hover {
+	color: #00B8F3;
+}
+
+button {
+	background-color: rgba(56, 56, 56, 0.40);
+	border: none;
+	border-radius: 8px;
+	transition: 1s;
+	overflow: hidden;
+	outline: none;
+	width: 25%;
+	color: white;
+	font-family: "PT Sans Narrow";
+	font-size: 1.5em;
+	position: relative;
+}
+
+.next {
+	display: inline-block;
+	position: relative;
+	left: -10px;
+	bottom: 3px;
+	margin: 10px 0;
+}
+
+.refresh {
+	display: inline-block;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	border: 20px solid white;
+	border-top-color: #C24789;
+	position: relative;
+	left: -10%;
+	bottom: -8px;
+	transition: all 1s;
+}
+
+.rotate{
+	transform: rotate(360deg);
+	border-top-color: white;
+	border-bottom-color: #493DB8;
+}
