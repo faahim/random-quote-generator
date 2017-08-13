@@ -1,7 +1,13 @@
+body {
+	font-family: sans;
+	color: #fff;
+}
+
 #quote-box {
 	width: 60vw;
 	height: 50vh;
-	margin: 25vh auto;
-	border-radius: 5px;
+	margin: 20vh auto 0;
+	padding: 30px;
+	border-radius: 10px;
 	background-color: darkred;
 }
