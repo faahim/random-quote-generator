@@ -1,0 +1,7 @@
+#quote-box {
+	width: 60vw;
+	height: 50vh;
+	margin: 25vh auto;
+	border-radius: 5px;
+	background-color: darkred;
+}
