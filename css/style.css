@@ -1,15 +1,23 @@
 body {
-	font-family: "PT Sans Narrow", sans-serif;
+	font-family: "Alegreya Sans", sans-serif;
 	font-size: 1em;
 	color: #fff;
 	background-color: #122136;
 }
 
 .insert-quote {
-	font-family: "Caveat Brush";
 	font-size: 3em;
+	font-weight: 500;
 	padding: 0 30px;
 	margin-top: 20px;
+}
+
+.long-quote {
+	font-size: 2em;
+}
+
+.short-quote {
+	font-size: 3em;
 }
 
 #quote-box {
@@ -57,7 +65,7 @@ i:hover {
 }
 
 button {
-	background-color: rgba(56, 56, 56, 0.40);
+	background-color: rgba(56, 56, 56, 0.30);
 	border: none;
 	border-radius: 8px;
 	transition: 1s;
@@ -65,16 +73,19 @@ button {
 	outline: none;
 	width: 25%;
 	color: white;
-	font-family: "PT Sans Narrow";
-	font-size: 1.5em;
+	font-size: 1.3em;
 	position: relative;
+}
+
+button:hover {
+	background-color: rgba(56, 56, 56, 0.50);
 }
 
 .next {
 	display: inline-block;
 	position: relative;
 	left: -10px;
-	bottom: 3px;
+	bottom: 5px;
 	margin: 10px 0;
 }
 
@@ -96,4 +107,102 @@ button {
 	transform: rotate(360deg);
 	border-top-color: white;
 	border-bottom-color: #493DB8;
+}
+
+
+/**************************Media queries*************************/
+@media (max-width: 1260px) {
+	.refresh {
+		left: -5%;
+	}
+	.next {
+		left: -2%;
+	}
+}
+
+@media (max-width: 1140px) {
+	.refresh {
+		left: 0;
+	}
+	.next {
+		left: 0;
+	}
+}
+
+@media (max-width: 1039px) {
+	#quote-box {
+		width: 80vw;
+	}
+}
+
+@media (max-width: 778px) {
+	button {
+		width: 30%;
+		font-size: 1em;
+	}
+	.insert-author {
+		width: 50%;
+		margin-left: 20px;
+	}
+	.refresh {
+		left: -5%;
+	}
+}
+
+@media (max-width: 669px) {
+	#quote-box {
+		height: 60vh;
+		margin-top: 15vh;
+	}
+	.insert-author {
+		width: 40%;
+		font-size: 1.5em;
+	}
+	.refresh {
+		border: 15px solid white;
+		border-top-color: #C24789;
+	}
+	.next {
+		bottom: 0;
+	}
+	i {
+		position: relative;
+		top: 3px;
+	}
+}
+
+@media (max-width: 620px) {
+	.insert-quote {
+		font-size: 2.5em;
+	}
+	.insert-author {
+		width: 45%;
+	}
+}
+
+@media (max-width: 540px) {
+	#quote-box {
+		height: 50vh;
+		margin-top: 20vh;
+	}
+	.insert-quote {
+		font-size: 2.2em !important;
+	}
+	.insert-author {
+		font-size: 1.2em;
+		width: 40%;
+	}
+}
+
+@media (max-width: 480px) {
+	.insert-author {
+		font-size: 1.2em;
+		width: 35%;
+	}
+	.refresh {
+		left: 0;
+		border: 10px solid white;
+		border-top-color: #C24789;
+		bottom: -3px;
+	}
 }
