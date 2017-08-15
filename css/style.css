@@ -75,20 +75,18 @@ button {
 	font-size: 1.4em;
 	position: absolute;
 	bottom: 15%;
-	left: 42%;
+	left: 42.5%;
 }
 
 button:hover {
-	background-color: rgba(56, 56, 56, 0.50);
+	background-color: rgba(113,115,208,0.50);
 }
 
 .next {
 	display: inline-block;
 	position: relative;
 	margin: 0;
-	/*left: -10px;*/
 	bottom: 10px;
-	/*margin: 10px 0;*/
 }
 
 .refresh {
@@ -114,20 +112,16 @@ button:hover {
 
 /**************************Media queries*************************/
 @media (max-width: 1260px) {
+	button {
+		font-size: 1em;
+	}
 	.refresh {
-		left: -5%;
+		border: 15px solid white;
+		border-top-color: #C24789;
 	}
 	.next {
-		left: -2%;
-	}
-}
-
-@media (max-width: 1140px) {
-	.refresh {
-		left: 0;
-	}
-	.next {
-		left: 0;
+		bottom: 5px;
+		left: 5px;
 	}
 }
 
@@ -137,14 +131,36 @@ button:hover {
 	}
 }
 
-@media (max-width: 778px) {
+@media (max-width: 939px) {
 	button {
-		width: 30%;
-		font-size: 1em;
+		width: 20%;
+		left: 40%;
+	}
+}
+
+@media (max-width: 778px) {
+	#quote-box {
+		padding: 5px 8px 8 
+		0px;
+	}
+	.insert-quote {
+		font-size: 2em;
+		padding: 0 10px;
+		margin: 0;
 	}
 	.insert-author {
-		width: 50%;
-		margin-left: 20px;
+		font-size: 1em;
+	}
+	.controls {
+		padding-top: 0;
+	}
+	.next {
+		bottom: 7px;
+	}
+	button {
+		left: 35%;
+		width: 30%;
+		bottom: 5%;
 	}
 	.refresh {
 		left: -5%;
@@ -152,20 +168,9 @@ button:hover {
 }
 
 @media (max-width: 669px) {
-	#quote-box {
-		height: 60vh;
-		margin-top: 15vh;
-	}
-	.insert-author {
-		width: 40%;
-		font-size: 1.5em;
-	}
 	.refresh {
 		border: 15px solid white;
 		border-top-color: #C24789;
-	}
-	.next {
-		bottom: 0;
 	}
 	i {
 		position: relative;
@@ -175,36 +180,20 @@ button:hover {
 
 @media (max-width: 620px) {
 	.insert-quote {
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	.insert-author {
-		width: 45%;
-	}
-}
-
-@media (max-width: 540px) {
-	#quote-box {
-		height: 50vh;
-		margin-top: 20vh;
-	}
-	.insert-quote {
-		font-size: 2.2em !important;
-	}
-	.insert-author {
-		font-size: 1.2em;
-		width: 40%;
+		width: 75%;
 	}
 }
 
 @media (max-width: 480px) {
-	.insert-author {
-		font-size: 1.2em;
-		width: 35%;
+	button {
+		width: 46%;
+		left: 27%;
 	}
 	.refresh {
-		left: 0;
-		border: 10px solid white;
 		border-top-color: #C24789;
-		bottom: -3px;
+		top: 2px;
 	}
 }
