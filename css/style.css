@@ -9,7 +9,7 @@ body {
 	font-size: 3em;
 	font-weight: 500;
 	padding: 0 30px;
-	margin-top: 20px;
+	margin: 10px 0;
 }
 
 .long-quote {
@@ -22,9 +22,8 @@ body {
 
 #quote-box {
 	width: 60vw;
-	height: 50vh;
-	margin: 20vh auto 0;
-	padding: 30px;
+	margin: 10vh auto 0;
+	padding: 30px 30px 100px;
 	border-radius: 10px;
 	background-color: #3EBB68;
 	position: relative;
@@ -43,7 +42,7 @@ body {
 
 .insert-author {
 	display: inline-block;
-	width: 60%;
+	width: 85%;
 	font-size: 2em;
 	margin: 0;
 }
@@ -51,7 +50,6 @@ body {
 a {
 	display: inline-block;
 	position: relative;
-	left: 20px;
 	top: 8px;
 }
 
@@ -66,15 +64,18 @@ i:hover {
 
 button {
 	background-color: rgba(56, 56, 56, 0.30);
+	padding: 10px;
 	border: none;
 	border-radius: 8px;
-	transition: 1s;
+	transition: 0.3s;
 	overflow: hidden;
 	outline: none;
-	width: 25%;
+	width: 15%;
 	color: white;
-	font-size: 1.3em;
-	position: relative;
+	font-size: 1.4em;
+	position: absolute;
+	bottom: 15%;
+	left: 42%;
 }
 
 button:hover {
@@ -84,9 +85,10 @@ button:hover {
 .next {
 	display: inline-block;
 	position: relative;
-	left: -10px;
-	bottom: 5px;
-	margin: 10px 0;
+	margin: 0;
+	/*left: -10px;*/
+	bottom: 10px;
+	/*margin: 10px 0;*/
 }
 
 .refresh {
@@ -98,8 +100,8 @@ button:hover {
 	border: 20px solid white;
 	border-top-color: #C24789;
 	position: relative;
-	left: -10%;
-	bottom: -8px;
+	/*left: -10%;*/
+	top: 3px;
 	transition: all 1s;
 }
 
